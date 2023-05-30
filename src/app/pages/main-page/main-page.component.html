@@ -1,0 +1,16 @@
+<div class="main-page">
+  <div class="resources">
+    <app-resources-item
+      *ngFor="let resource of resources"
+      [resource]="resource"
+    />
+  </div>
+
+  <div class="users">
+    <app-users-item
+      class="users-item"
+      *ngFor="let user of users"
+      [user]="user"
+    />
+  </div>
+</div>

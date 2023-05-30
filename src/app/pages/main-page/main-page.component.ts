@@ -1,16 +1,15 @@
 import {Component, OnInit} from '@angular/core';
-import {IUser} from "./types/user.type";
-import {UserService} from "./services/user.service";
-import {IResource} from "./types/resource.type";
-import {ResourceService} from "./services/resource.service";
+import {UserService} from "../../services/user.service";
+import {ResourceService} from "../../services/resource.service";
+import {IUser} from "../../types/user.type";
+import {IResource} from "../../types/resource.type";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-main-page',
+  templateUrl: './main-page.component.html',
+  styleUrls: ['./main-page.component.scss']
 })
-export class AppComponent implements OnInit {
-
+export class MainPageComponent implements OnInit {
   constructor(private userService: UserService,
               private resourceService: ResourceService) {
   }
@@ -27,5 +26,3 @@ export class AppComponent implements OnInit {
     })
   }
 }
-
-// TODO: Add button component

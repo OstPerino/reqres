@@ -1,4 +1,4 @@
-<div class="user-item">
+<div class="user-item" (click)="goToUserPage()">
   <img [src]="user.avatar" alt="avatar" class="avatar">
   <div class="content">
     <h1 class="title">{{  user.first_name + ' ' + user.last_name }}</h1>

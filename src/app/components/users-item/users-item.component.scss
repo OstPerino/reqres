@@ -1,6 +1,11 @@
 .user-item {
   display: flex;
   align-items: center;
+  border: 1px solid black;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .avatar {
