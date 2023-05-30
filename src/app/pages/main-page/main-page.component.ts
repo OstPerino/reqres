@@ -25,4 +25,6 @@ export class MainPageComponent implements OnInit {
       this.resources = resources.data;
     })
   }
+
+  // TODO: Deleting user from list
 }
