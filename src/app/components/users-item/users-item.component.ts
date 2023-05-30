@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {IUser} from "../../../types/user.type";
+import {IUser} from "../../types/user.type";
 
 @Component({
   selector: 'app-users-item',

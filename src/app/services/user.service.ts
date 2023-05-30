@@ -14,6 +14,4 @@ export class UserService {
   getAll(): Observable<IUserResponse> {
     return this.http.get<IUserResponse>('https://reqres.in/api/users?page=2');
   }
-
-
 }

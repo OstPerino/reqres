@@ -6,11 +6,6 @@ export interface IUser {
   avatar: string;
 }
 
-export interface ISupport {
-  url: string;
-  text: string;
-}
-
 // TODO: camel case in interfaces from snake case
 export interface IUserResponse {
   page: number;
@@ -18,5 +13,5 @@ export interface IUserResponse {
   total: number;
   total_pages: number;
   data: IUser[];
-  support: ISupport;
+  support: any;
 }

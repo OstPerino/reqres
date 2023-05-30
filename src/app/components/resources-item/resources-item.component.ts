@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {IResource} from "../../types/resource.type";
 
 @Component({
   selector: 'app-resources-item',
@@ -6,5 +7,5 @@ import {Component} from '@angular/core';
   styleUrls: ['./resources-item.component.scss']
 })
 export class ResourcesItemComponent {
-
+  @Input() resource: IResource;
 }
