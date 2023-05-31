@@ -10,6 +10,8 @@ import {MainPageComponent} from './pages/main-page/main-page.component';
 import {UserPageComponent} from './pages/user-page/user-page.component';
 import {FormsModule} from "@angular/forms";
 import { CustomButtonComponent } from './components/UI/custom-button/custom-button.component';
+import { AuthPageComponent } from './pages/auth-page/auth-page.component';
+import { RegistrationPageComponent } from './pages/registration-page/registration-page.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { CustomButtonComponent } from './components/UI/custom-button/custom-butt
     MainPageComponent,
     UserPageComponent,
     CustomButtonComponent,
+    AuthPageComponent,
+    RegistrationPageComponent,
   ],
   imports: [
     BrowserModule,

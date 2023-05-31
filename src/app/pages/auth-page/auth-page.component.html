@@ -1,0 +1,19 @@
+<div class="auth-page">
+  <form class="form">
+    <div class="title">
+      <h1>Авторизация</h1>
+    </div>
+    <div class="data-input">
+      <div class="input-container">
+        <input type="text" placeholder="User name" [(ngModel)]="username" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="input-container">
+        <input type="text" placeholder="Email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="input-container">
+        <input type="password" placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+      </div>
+    </div>
+    <app-custom-button (clicked)="authorize()" [content]="'Войти'"/>
+  </form>
+</div>
