@@ -17,7 +17,7 @@ export interface IUserResponse {
 }
 
 export interface IUserEdit {
-  first_name?: string;
-  last_name?: string;
-  email?: string;
+  first_name: string;
+  last_name: string;
+  email: string;
 }

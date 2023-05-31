@@ -16,6 +16,7 @@
         class="users-item"
         *ngFor="let user of users"
         [user]="user"
+        (clicked)="deleteUser($event)"
       />
     </div>
   </div>

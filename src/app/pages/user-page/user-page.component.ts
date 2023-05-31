@@ -59,7 +59,4 @@ export class UserPageComponent implements OnInit {
 
     this.showInputs = false;
   }
-
-  // TODO: User put method to change data
-
 }

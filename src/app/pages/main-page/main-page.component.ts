@@ -23,8 +23,16 @@ export class MainPageComponent implements OnInit {
     });
     this.resourceService.getAll().subscribe(resources => {
       this.resources = resources.data;
-    })
+    });
   }
 
-  // TODO: Deleting user from list
+  deleteUser(userId: number | string) {
+    this.userService.deleteUser(userId).subscribe(deleted => {
+      if (deleted) {
+        this.users = this.users.filter(user => user.id !== userId);
+      } else {
+        console.log('Delete operation failed');
+      }
+    });
+  }
 }

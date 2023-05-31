@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="button-container">
-    <app-custom-button (clicked)="onEditHandler()" [content]="'Изменить'"/>
-    <app-custom-button (clicked)="submitEdit()" [content]="'Подвердить'" class="submit-button"/>
+    <app-custom-button (clicked)="onEditHandler()" [content]="'Изменить'" *ngIf="!showInputs"/>
+    <app-custom-button (clicked)="submitEdit()" [content]="'Подвердить'" class="submit-button" *ngIf="showInputs"/>
   </div>
 </div>

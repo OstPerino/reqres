@@ -1,7 +1,10 @@
-<div class="user-item" (click)="goToUserPage()">
+<div class="user-item">
   <img [src]="user.avatar" alt="avatar" class="avatar">
-  <div class="content">
+  <div class="content" (click)="goToUserPage()">
     <h1 class="title">{{  user.first_name + ' ' + user.last_name }}</h1>
     <p class="subtitle">{{ user.email }}</p>
+  </div>
+  <div class="actions">
+    <app-custom-button (clicked)="emitDeleting(user.id)" [content]="'Удалить'"/>
   </div>
 </div>
