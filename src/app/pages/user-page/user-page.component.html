@@ -1,7 +1,36 @@
 <div class="user-page">
   <img [src]="userInfo?.avatar" alt="" class="avatar">
   <div class="info">
-    <h1>{{ userInfo?.first_name + ' ' + userInfo?.last_name }}</h1>
-
+    <div class="info--container title">
+      <span *ngIf="!showInputs">{{ userInfo?.first_name }}</span>
+      <input
+        placeholder="Email"
+        type="text"
+        *ngIf="showInputs"
+        [(ngModel)]="editFirstNameValue"
+      >
+    </div>
+    <div class="info--container title">
+      <span *ngIf="!showInputs">{{ userInfo?.last_name }}</span>
+      <input
+        placeholder="First Name"
+        type="text"
+        *ngIf="showInputs"
+        [(ngModel)]="editLastNameValue"
+      >
+    </div>
+    <div class="info--container">
+      <span *ngIf="!showInputs">{{ userInfo?.email }}</span>
+      <input
+        placeholder="Last Name"
+        type="text"
+        *ngIf="showInputs"
+        [(ngModel)]="editEmailValue"
+      >
+    </div>
+  </div>
+  <div class="button-container">
+    <app-custom-button (clicked)="onEditHandler()" [content]="'Изменить'"/>
+    <app-custom-button (clicked)="submitEdit()" [content]="'Подвердить'" class="submit-button"/>
   </div>
 </div>

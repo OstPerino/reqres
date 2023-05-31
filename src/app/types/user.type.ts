@@ -15,3 +15,9 @@ export interface IUserResponse {
   data: IUser[];
   support: any;
 }
+
+export interface IUserEdit {
+  first_name?: string;
+  last_name?: string;
+  email?: string;
+}

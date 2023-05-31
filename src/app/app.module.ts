@@ -8,6 +8,8 @@ import {UsersItemComponent} from './components/users-item/users-item.component';
 import {ResourcesItemComponent} from './components/resources-item/resources-item.component';
 import {MainPageComponent} from './pages/main-page/main-page.component';
 import {UserPageComponent} from './pages/user-page/user-page.component';
+import {FormsModule} from "@angular/forms";
+import { CustomButtonComponent } from './components/UI/custom-button/custom-button.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import {UserPageComponent} from './pages/user-page/user-page.component';
     ResourcesItemComponent,
     MainPageComponent,
     UserPageComponent,
+    CustomButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
